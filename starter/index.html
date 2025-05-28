@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Mini Pokédex</h1>
+
+  <div class="list-container">
+    <h2>Liste des Pokémon</h2>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Rechercher un Pokémon...">
+    </div>
+
+    <ul id="pokemonList"></ul>
+
+    <div class="page-info" id="pageInfo">Chargement...</div>
+
+    <div class="pagination">
+      <button id="prevBtn">⬅️ Précédent</button>
+      <button id="nextBtn">Suivant ➡️</button>
+    </div>
+  </div>
+
+  <div class="details-container">
+    <h2>Détails du Pokémon</h2>
+    <div id="pokemonDetails"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
