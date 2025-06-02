@@ -46,10 +46,9 @@ const getTypeColor = (type) => {
   return colors[type] || '#777'; // couleur par défaut si type inconnu
 };
 // Récupérer le nombre total de Pokémon 
-
 const fetchTotalPokemonCount = async () => {
   try {
-    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1');
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon');
     const data = await res.json();
     totalPokemon = data.count;
   } catch (err) {
@@ -124,7 +123,6 @@ const fetchPokemonList = async (offset = 0) => {
 const displayPokemonList = (pokemonArray) => {
   // Ajoute la classe "fade" pour commencer l'animation de disparition
   pokemonList.classList.add('fade');
-
   // Attends 300ms (le temps de la transition CSS) avant de changer la liste
   setTimeout(() => {
     pokemonList.innerHTML = ''; // on vide

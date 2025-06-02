@@ -106,6 +106,10 @@ ul {
 #pokemonList {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
 #pokemonList.fade {
